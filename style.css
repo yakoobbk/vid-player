@@ -1,0 +1,129 @@
+*{
+   
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    background-color: #fff;
+}
+.screen{
+    position: absolute;
+    width:75rem;
+    height:37.5rem;
+    background-color: rgba(10, 1, 1, 0.938);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.vid{
+    position: absolute;
+    width: 80%;
+    height:90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.controls{
+     position: absolute;
+    width:80%;
+    height:10%;
+    background: transparent;
+    
+    left: 10%;
+    top: 85%;
+}
+.controls:hover{
+    background:rgba(44, 41, 41, 0.733) ;
+}
+.left{
+    position: absolute;
+    height: auto;
+    width: auto;
+    float: left;
+    top: 0.5rem;
+    left: 2rem;
+}
+.fa-solid{
+    font-size: 2rem;
+    right: 10px;
+    color: dodgerblue;
+}
+.fa-solid:hover{
+  color: #fff;
+}
+.volumebar{
+    
+    position: absolute;
+    width: 3rem;
+    height: 5px;
+    border-radius: 2px;
+    background: #fff;
+    left: 4.5rem;
+    top: 1rem;
+}
+
+.volume-progress{
+    position: absolute;
+    width:100%;
+    height: 5px;
+    border-radius: 2px;
+    background: rgb(209, 11, 11);
+    left:0;
+    top: 0;
+}
+
+  
+.right{
+    float: right;
+}
+.speed{
+    position: absolute;
+    right:11rem ;
+    top:1.25rem ;
+    cursor: pointer;
+}
+.fullscreen{
+   position: absolute;
+   right: 1rem;
+   top:1rem ;
+   cursor: pointer;
+}
+.time{
+    position: absolute;
+    right: 4rem;
+    top:1rem;
+    color:dodgerblue;
+}
+.progress{
+    position: absolute;
+    
+    width: 33rem;
+    height: 0.5rem;
+    border-radius: 5px;
+    background: #fff;
+    left: 11rem;
+    top: 1.5rem;
+}
+.progress-bar{
+    position: absolute;
+    cursor: pointer;
+    width: 0;
+    height: 0.5rem;
+    border-radius: 5px;
+    background: rgb(214, 20, 20);
+    left:0;
+    top:0;
+}
+.forward .fa-forward,.fa-backward{
+    font-size: 1rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+
+}

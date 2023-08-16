@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videoPlayer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/58bb162c56.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main class="main">
+        <div class="screen">
+
+            <video src="http://techslides.com/demos/sample-videos/small.mp4"  class="vid" playsinline id="vid"></video>
+
+            <div class="controls">
+
+             <div class="left">
+                <i class="fa-solid fa-play" id="play" title="play"></i>
+              <!--  <i class="fa-solid fa-pause"></i>   -->  
+
+              <i class="fa-solid fa-volume-high" title="mute" id="sound"></i>
+              <div class="volumebar" title="volume">
+                <div class="volume-progress">
+
+                </div>
+              </div>
+
+           <!-- <i class="fa-solid fa-volume-xmark"></i> -->   
+                 
+            </div>
+             <div class="right"> 
+                 <div class="speed" title="Playback rate">
+                <select name="playbackRate" class="player-speed" id="select">
+                  <option value="1">1 x</option>
+                  <option value="0.5">0.5 x</option>
+                  <option value="0.75">0.75 x</option>
+                  <option value="1">1 x</option>
+                  <option value="1.5">1.5 x</option>
+                  <option value="2">2 x</option>
+                </select>
+              </div>
+
+              <div class="time">
+                <span class="time-elapsed">00:00</span>
+                <span class="time-duration">00:00:00</span>
+              </div>
+              <div class="forward">
+                
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-solid fa-forward"></i>
+              </div>
+
+
+              <div class="fullscreen">
+                <i class="fa-solid fa-expand" id="screensize"></i>
+               <!-- <i class="fa-solid fa-minimize"></i> -->
+              </div>
+
+            </div>
+             <div class="progress" title="seek">
+                <div class="progress-bar"></div>
+            </div>
+ 
+        </div>
+       </div>  
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
